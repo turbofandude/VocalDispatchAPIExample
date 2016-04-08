@@ -7,7 +7,7 @@ namespace VocalDispatchAPIExample
     public class Utilities
     {        
         //This is what we'll send to SetupVocalDispatchAPI to safely connect unsafe events in VocalDispatchAPI.cs from safe events in MyCallout.cs
-        public delegate bool MyCalloutDelegate();
+        public delegate bool VocalDispatchEventDelegate();
         //Use this function to check if an LSPDFR plugin is installed and running, as well as possibly check for a minimum version
         public static bool IsLSPDFRPluginRunning(string Plugin, Version minversion = null)
         {

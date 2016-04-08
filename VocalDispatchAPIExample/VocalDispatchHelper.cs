@@ -8,7 +8,7 @@ namespace VocalDispatchAPIExample
     {   
         //The RegisterForAPI event in VocalDispatch returns Guid.Empty if, for some reason, it could not register your event handler. Store the Guid here so you can clean up later.        
         private Guid vocaldispatchapiguid = Guid.Empty;
-        private Utilities.MyCalloutDelegate safeeventhandler = null;
+        private Utilities.VocalDispatchEventDelegate safeeventhandler = null;
         /// <summary>
         /// This function will be called directly by VocalDispatch.
         /// It then calls the function you specify in SetupVocalDispatchAPI.
@@ -21,7 +21,7 @@ namespace VocalDispatchAPIExample
                 return safeeventhandler(); //Calls the function we specify when we call SetupVocalDispatchAPI
             return false;
         }        
-        public void SetupVocalDispatchAPI(string eventtohandle, Utilities.MyCalloutDelegate specifiedsafeeventhandler)
+        public void SetupVocalDispatchAPI(string eventtohandle, Utilities.VocalDispatchEventDelegate specifiedsafeeventhandler)
         {
             //Setup our notification function and tell VocalDispatch to call it when it hears the appropriate phrase
             safeeventhandler = specifiedsafeeventhandler;

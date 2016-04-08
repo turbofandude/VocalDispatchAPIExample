@@ -52,7 +52,7 @@ namespace VocalDispatchAPIExample
                 try
                 {
                     //Tell our VocalDispatchHelper class to setup the "VocalDispatchSaysPlayerIsRequestingCode2Backup" function as the event handler function.
-                    VDRequestingCode2Backup.SetupVocalDispatchAPI("VocalDispatch.RequestCode2Backup", new Utilities.MyCalloutDelegate(VocalDispatchSaysPlayerIsRequestingCode2Backup));
+                    VDRequestingCode2Backup.SetupVocalDispatchAPI("VocalDispatch.RequestCode2Backup", new Utilities.VocalDispatchEventDelegate(VocalDispatchSaysPlayerIsRequestingCode2Backup));
                 }
                 catch(Exception e)
                 {
