@@ -72,5 +72,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-###Third Party Software
-I have included portions of code and files relating to both LSPDFR and RagePluginHook for the purposes of allowing the example to compile directly from the download. That content is governed by the license of its respective owners.
