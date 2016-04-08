@@ -49,8 +49,7 @@ You'll need most of the code setup as discussed above, but use your custom event
 MyVocalDispatchHelper.SetupVocalDispatchAPI("VocalDispatchAPIExample.RequestCoroner", new Utilities.VocalDispatchEventDelegate(SendCoroner));
 ```
 
-##Licenses
-###VocalDispatch
+##License
 VocalDispatch and the VocalDispatchAPIExample are governed by a modified version of the MIT License. The license is as follows:
 Modified MIT License
 
