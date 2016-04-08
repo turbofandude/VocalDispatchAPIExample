@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VocalDispatch</name>
+    </assembly>
+    <members>
+        <member name="T:VocalDispatch.Main">
+            <summary>
+            Do not rename! Attributes or inheritance based plugins will follow when the API is more in depth.
+            </summary>
+        </member>
+        <member name="F:VocalDispatch.Main.vocdis">
+            <summary>
+            Constructor for the main class, same as the class, do not rename.
+            </summary>
+        </member>
+        <member name="M:VocalDispatch.Main.#ctor">
+            <summary>
+            The constructor for the plugin.
+            </summary>
+        </member>
+        <member name="M:VocalDispatch.Main.Finally">
+            <summary>
+            Called when the plugin ends or is terminated to cleanup
+            </summary>        
+        </member>
+        <member name="M:VocalDispatch.Main.Initialize">
+            <summary>
+            Called when the plugin is first loaded by LSPDFR
+            </summary>
+        </member>
+        <member name="M:VocalDispatch.Main.Functions_OnOnDutyStateChanged(System.Boolean)">
+            <summary>
+            The event handler mentioned above,
+            </summary>
+        </member>
+        <member name="M:VocalDispatch.Settings.Load">
+            <summary>
+            This function loads the settings from the .ini file for VocalDispatch.
+            </summary>
+        </member>
+        <member name="T:VocalDispatch.APIv1">
+            <summary>
+            APIv1 is the standardized API available for VocalDispatch.
+            If changes are made in the future that would break this API, a new class named APIv2 will be added and the changes done there to ensure backward compatibility.    
+            </summary>
+        </member>
+        <member name="T:VocalDispatch.APIv1.VocalDispatchPhraseNotificationEventHandlerFunction">
+            <summary>
+            This is the delegate variable definition to use when defining your event handler function.
+            </summary>
+            <returns>A bool indicating whether or not your code has handled the event. Returning true indicates that your code has handled the event.</returns>
+        </member>
+        <member name="M:VocalDispatch.APIv1.RegisterEventHandler(System.String,System.String,VocalDispatch.APIv1.VocalDispatchPhraseNotificationEventHandlerFunction)">
+            <summary>
+            This function registers a notification function.
+            </summary>
+            <param name="registrar">The name of the registrar for use in logs or notifications.</param>
+            <param name="eventname">The event string you wish to be notified of.</param>
+            <param name="eventhandlerfunction">A VocalDispatchPhraseNotificationEventHandler to be called when the desired event is raised.</param>
+            <returns>A Guid to identify this request to use the API. A return value of Guid.Empty indicates there was a problem registering for API usage.</returns>
+        </member>
+        <member name="M:VocalDispatch.APIv1.UnregisterEventHandler(System.Guid)">
+            <summary>
+            This function unregisters a notification function.
+            </summary>
+            <param name="guid"></param>
+            <returns>A bool value indicating whether or not unregistering was successful.</returns>
+        </member>
+    </members>
+</doc>
