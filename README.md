@@ -1,6 +1,8 @@
 ##About the Example Project
 The code provided in this repository can be built and installed directly as a callout for LSPDFR. Assuming you have VocalDispatch installed, when it loads, if you accept the callout, it registers its own Code2Backup function and displays a notification when you request Code 2 backup verbally. Although this example project is a callout, the VocalDispatch API has practical uses far beyond custom dispatch during callouts.
 
+The project references several dependencies. You can resolve these assemblies, after ensuring you have met the runtime prerequisites, by copying VocalDispatch.dll (from {Grand Theft Auto V}\plugins\lspdfr), [VocalDispatch.xml](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Dependencies/VocalDispatch.XML), LSPD First Response.dll (from {Grand Theft Auto V}\plugins), RagePluginHookSDK.dll (from {Grand Theft Auto V}\plugins), and RagePluginHookSDK.xml (from {Grand Theft Auto V}\plugins) into the "Dependencies" folder in the project.
+
 ##API Guide
 ###Runtime Prequisites
 You'll (obviously) need Grand Theft Auto V, [RagePluginHook](http://ragepluginhook.net/Downloads.aspx), [LSPDFR](http://www.lcpdfr.com/files/file/7792-lspd-first-response/), and [VocalDispatch](www.lcpdfr.com/files/file/10593-vocaldispatch/).
@@ -9,8 +11,8 @@ You'll (obviously) need Grand Theft Auto V, [RagePluginHook](http://ragepluginho
 To get started on a project that uses the VocalDispatch API, you'll need to setup an LSPDFR plugin project. For more information on this, see [this forum topic](http://www.lcpdfr.com/forums/topic/52906-api-quick-start-guide-example-project/).
 
 ###Setting Up
-These instructions assume you're using Visual Studio 2015 (the specific version does not matter).
-  1. Copy [VocalDispatch.dll](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Dependencies/VocalDispatch.dll) and [VocalDispatch.xml](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Dependencies/VocalDispatch.XML) into the folder you want to store dependencies in.
+These instructions assume you have the references/dependencies required for an LSPDFR plugin setup properly already.
+  1. Copy VocalDispatch.dll (from {Grand Theft Auto V}\plugins\lspdfr) and [VocalDispatch.xml](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Dependencies/VocalDispatch.XML) into the folder you want to store dependencies in.
   2. Add VocalDispatch.dll as a reference to your project.
   3. Add [Utilities.cs](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Utilities.cs) and [VocalDispatchHelper.cs](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/VocalDispatchHelper.cs) to your project.
 
