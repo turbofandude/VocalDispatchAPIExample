@@ -13,8 +13,14 @@ To get started on a project that uses the VocalDispatch API, you'll need to setu
 ###Setting Up
 These instructions assume you have the references/dependencies required for an LSPDFR plugin setup properly already.
   1. Copy VocalDispatch.dll (from {Grand Theft Auto V}\plugins\lspdfr) and [VocalDispatch.xml](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Dependencies/VocalDispatch.XML) into the folder you want to store dependencies in.
-  2. Add VocalDispatch.dll as a reference to your project.
+  2. Add VocalDispatch.dll as a reference to your project (see below). 
   3. Add [Utilities.cs](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Utilities.cs) and [VocalDispatchHelper.cs](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/VocalDispatchHelper.cs) to your project.
+  
+###Adding a Reference to a Project
+This can be accomplished by right clicking the "References" item in the project and clicking on "Add Reference", then clicking "Browse" on that dialog and looking for the DLLs.
+
+![alt text](http://i.imgur.com/xdNVagU.png "Right click the project and click Add Reference")
+![alt text](http://i.imgur.com/4dtUbxb.png "Click Browse and look for the DLLs")
 
 ###Writing the Code
   1. Setup your AssemblyResolve function like this: `AppDomain.CurrentDomain.AssemblyResolve += new ResolveEventHandler(Utilities.ResolveAssemblyEventHandler);`. This is demonstrated in the Initialize function in [Main.cs](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Main.cs). This tells the .NET Framework what function should be called when it tries to load an assembly (in this case, VocalDispatch). We're using a custom function here so that we can resolve assembly requests to plugins loaded by LSPDFR - something that can't be done automatically. Feel free to use the function I've supplied as is.
