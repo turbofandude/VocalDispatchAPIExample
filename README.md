@@ -1,7 +1,7 @@
 ##About the Example Project
 The code provided in this repository can be built and installed directly as a callout for LSPDFR. Assuming you have VocalDispatch installed, when it loads, if you accept the callout, it registers its own Code2Backup function and displays a notification when you request Code 2 backup verbally. Although this example project is a callout, the VocalDispatch API has practical uses far beyond custom dispatch during callouts.
 
-The project references several dependencies. You can resolve these assemblies, after ensuring you have met the runtime prerequisites, by copying VocalDispatch.dll (from {Grand Theft Auto V}\plugins\lspdfr), [VocalDispatch.xml](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Dependencies/VocalDispatch.XML), LSPD First Response.dll (from {Grand Theft Auto V}\plugins), RagePluginHookSDK.dll (from {Grand Theft Auto V}\plugins), and RagePluginHookSDK.xml (from {Grand Theft Auto V}\plugins) into the "Dependencies" folder in the project.
+The project references several dependencies. You can resolve these assemblies, after ensuring you have met the runtime prerequisites, by copying VocalDispatch.dll from {Grand Theft Auto V}\plugins\lspdfr, [VocalDispatch.xml](https://github.com/turbofandude/VocalDispatchAPIExample/blob/master/VocalDispatchAPIExample/Dependencies/VocalDispatch.XML), LSPD First Response.dll from {Grand Theft Auto V}\plugins, RagePluginHookSDK.dll from {Grand Theft Auto V}\plugins, and RagePluginHookSDK.xml from {Grand Theft Auto V}\plugins into the "Dependencies" folder in the project.
 
 ##API Guide
 ###Runtime Prequisites
